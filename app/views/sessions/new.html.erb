@@ -1,0 +1,6 @@
+<p>Login with Facebook connect</p>
+<%#= fb_login_button('window.location = "/users/link_user_accounts";')%>
+<%= fb_login_and_redirect(request.url, :autologoutlink => true, :background => "dark", :condition => "\"javascript_returning_true\"; true", :length => "long", :size => "large") %>
+ &nbsp;
+<%= fb_logout_link("Logout", "http://facebooker.pjkh.com/helpers/fb_logout_link") %>
+
